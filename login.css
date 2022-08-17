@@ -118,6 +118,11 @@ button {
 
 .forgot-password {
   align-self: center;
+  color: #999999;
+}
+
+.forgot-password a {
+    color: #6772e5;
 }
 
 .submit-button::after {
