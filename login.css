@@ -10,35 +10,33 @@ body {
   background-color: #f6f9fc;
   font-family: "proxima-nova", Arial, Helvetica, sans-serif;
   color: #333;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.42857143;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; */
 }
 
-.wrapper {
+:is(.wrapper, .form-container1, form) {
   display: flex;
+}
+
+:is(.wrapper, .form-container1) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.wrapper {
   gap: 1.875rem;
 }
 
 .logo {
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 
 .logo img {
-  width: 130px;
+  width: 8.125rem;
 }
 
 .form-container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
   background-color: #fff;
   padding: 30px 50px;
@@ -46,7 +44,7 @@ body {
 }
 
 .form-container1 h1 {
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-bottom: 1.25rem;
   font-weight: 300;
   align-self: flex-start;
@@ -56,7 +54,7 @@ body {
   color: #999999;
   margin-bottom: 1.875rem;
   max-width: 430px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
   text-align: start;
   align-self: flex-start;
@@ -67,8 +65,8 @@ body {
   cursor: pointer;
   border-bottom: 1px solid #a8aef0;
   background-color: transparent;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .form-container2 {
@@ -80,7 +78,6 @@ h3 a {
 }
 
 form {
-  display: flex;
   flex-direction: column;
   gap: 2em;
 }
@@ -100,7 +97,7 @@ input {
   border: none;
   color: #525f7f;
   background-color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   box-shadow: 0 0 0 1px #c4cdd5;
   border-radius: 5px;
 }
@@ -126,12 +123,12 @@ button {
 }
 
 .forgot-password a {
-    color: #6772e5;
+  color: #6772e5;
 }
 
 .submit-button::after {
   content: "\2192";
-  font-size: 11px;
+  font-size: 0.688rem;
   font-family: "payhipcustom";
   transition: left 0.2s ease-in;
 }
@@ -147,6 +144,6 @@ button {
 .login-footer a,
 span {
   color: #999999;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 100;
 }
